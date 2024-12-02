@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                Food<span>IT</span>
+            </div>
+            <ul>
+                <li class="active"><a href="index.html"><i class="fa-solid fa-house-user"></i> Home</a></li>
+                <li><a href="history.html"><i class="fa-regular fa-user"></i> History</a></li>
+                <li><a href="feedback.html"><i class="fa-solid fa-heart"></i> Feedback</a></li>
+            </ul>
+             <ul>
+        </div>
+        <div class="center">
+            <div class="search">
+                <div class="form">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search...">
+                    <button>Search</button>
+                </div>
+            </div>
+
+            <h2>FOODS</h2>
+            <div class="list">
+                <div class="item" data-key="1">
+                    <div class="img">
+                        <img src="turon.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">turon</div>
+                        <div class="des">
+                            Food Canteen
+                        </div>
+                        <div class="price">₱70</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(1)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="2">
+                    <div class="img">
+                        <img src="product-iced-caramel-macchiato.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">icedcaramelmacchiato</div>
+                        <div class="des">
+                            Shakeys
+                        </div>
+                        <div class="price">₱39</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(2)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="3">
+                    <div class="img">
+                        <img src="chicken.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">sikenjoy</div>
+                        <div class="des">
+                            Chooks to Go
+                        </div>
+                        <div class="price">₱25</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(3)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+                
+                <div class="item" data-key="4">
+                    <div class="img">
+                        <img src="pizza.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Pizza</div>
+                        <div class="des">
+                            domino's pizza
+                        </div>
+                        <div class="price">₱40</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(4)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="cart">
+            <div class="name">CART</div>
+            <div class="listCart"></div>
+             <button class="done-btn">Done</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
